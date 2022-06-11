@@ -11,7 +11,9 @@ body {
 }
 .container {
 }
-
+p {
+  font-size: 35px;
+}
 .card {
   height: 100px;
   aspect-ratio: 1 / 1;
@@ -27,5 +29,35 @@ body {
   background-color: rgb(167, 49, 167);
   position: absolute;
   border-radius: 30px;
+}
+
+.show-front {
   display: none;
 }
+
+/*#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  justify-content: end;
+}
+
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}*/

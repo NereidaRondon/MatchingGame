@@ -1,21 +1,21 @@
-const cards = document.gquerySelectorAll(".card")
-let picks = [;
-]
-cards.forEach(card => {
-    card.addEventListener("click", pickCard)
-})
+const cards = document.querySelectorAll(".card");
+let picks = [];
+//create an object?
+cards.forEach((card) => {
+  card.addEventListener("click", pickCard);
+});
 
-
-function pickCard(){
-    picks.push(this.textContent);
-    console.log(picks)
+function pickCard() {
+  this.children[1].classList.toggle("show-front");
+  picks.push(this.textContent.trim);
 }
-const firstClicked = cards[0].textContent;
-const secondClicked = cards[1].textContent;
-
-if(firstClicked === secondClicked){
-    console.log("keep the cards flipped")
-} else {
-    console.log("rotate back");
+if (picks.length >= 2) {
+  if (picks[picks.length - 1] == picks[picks.length - 2]) {
+    console.log("matched");
+  } else {
+    console.log("not matched");
+    //this.children.classList.toggle("show-front");
+    const shown = document.querySelectorAll(".shown-front");
+    shown.forEach((c) => c.classList.toggle("show-front"));
+  }
 }
-
