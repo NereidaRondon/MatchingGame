@@ -3,13 +3,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(19, 19, 20);
+  height: 100vh;
 }
 .flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 p {
   font-size: 35px;
@@ -19,7 +22,7 @@ p {
   aspect-ratio: 1 / 1;
   background-color: rgb(125, 185, 241);
   margin: 1em;
-  position: relative;
+  position: inherit;
   border-radius: 8px;
   border: 2px solid rgb(167, 49, 167);
 }
@@ -27,7 +30,7 @@ p {
   height: 100px;
   aspect-ratio: 1 / 1;
   background-color: rgb(167, 49, 167);
-  position: absolute;
+  position: inherit;
   border-radius: 30px;
 }
 
